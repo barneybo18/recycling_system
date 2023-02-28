@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Recycling Website</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Recycling Website</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="theme-switcher">
+        <label for="theme-select">Theme:</label>
+        <select class="dropdown" id="theme-select">
+          <option value="system">System Default</option>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+      </div>
+    </header>
+    <main>
+      <div class="carousel">
+        <div class="slides">
+          <img src="https://via.placeholder.com/500x300.png?text=Slide%201" alt="Slide 1">
+          <img src="https://via.placeholder.com/500x300.png?text=Slide%202" alt="Slide 2">
+          <img src="https://via.placeholder.com/500x300.png?text=Slide%203" alt="Slide 3">
+        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+        <div class="dots">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+      <div class="content">
+        <h2>Welcome to the Recycling Website</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et commodo tellus, sed tristique turpis. Ut ac libero vel dolor blandit lobortis eu ac turpis. In mollis diam non arcu hendrerit blandit. Nulla in arcu a nisl fermentum commodo.</p>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
